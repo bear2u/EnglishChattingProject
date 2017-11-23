@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_english">
+        <item>1일차</item>
+        <item>2일차</item>
+        <item>3일차</item>
+    </string-array>
+</resources>

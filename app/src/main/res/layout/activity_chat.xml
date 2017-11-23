@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/container"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+
+        android:padding="5dp">
+
+        <EditText
+
+            android:id="@+id/messageEdit"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_toLeftOf="@+id/chatSendButton"
+
+            android:hint="type message"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+
+            android:id="@+id/chatSendButton"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentRight="true"
+
+            android:background="@color/background_floating_material_dark"
+
+            android:text="Send MSG"
+
+            android:textColor="@color/background_material_light" />
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/messagesContainer"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:layout_above="@+id/messageEdit"
+
+            android:layout_alignParentLeft="false"
+
+            android:layout_alignParentTop="false"
+
+            android:layout_marginBottom="20dp"
+
+            android:layout_marginTop="10dp"
+
+            android:transcriptMode="alwaysScroll" />
+
+
+    </RelativeLayout>
+</LinearLayout>
